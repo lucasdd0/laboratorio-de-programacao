@@ -1,0 +1,18 @@
+package exercicios;
+import java.util.Scanner;
+public class exercicio29{
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		
+		int y= 0;
+		
+	
+
+		y = (int) Math.pow((Math.pow(Math.sqrt(Math.sqrt(2)), 3) * Math.pow(Math.sqrt(Math.sqrt(3)), 2) + Math.pow(Math.sqrt(Math.sqrt(2)), 12))/(Math.pow(Math.sqrt(Math.sqrt(2)), 3))      , (Math.sqrt(3) - Math.sqrt(2))/1.0);		
+		
+		
+		
+		System.out.println("Seu resultado é: " + y);
+		
+	}
+}

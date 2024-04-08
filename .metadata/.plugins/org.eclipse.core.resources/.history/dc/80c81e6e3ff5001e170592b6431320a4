@@ -1,0 +1,18 @@
+package exercicios;
+import java.util.Scanner;
+public class exercicio8a{
+	public static void main (String [] args) {
+		Scanner input = new Scanner (System.in);
+		
+		int x, y, a, b;
+		
+		System.out.println("Informe o valor de x: ");
+		x = input.nextInt();
+		
+	
+	
+	
+	
+	}
+}
+	

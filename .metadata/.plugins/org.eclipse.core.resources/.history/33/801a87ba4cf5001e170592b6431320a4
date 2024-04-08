@@ -1,0 +1,19 @@
+package exercicios;
+import java.util.Scanner;
+public class exercicio29{
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		
+		int y;
+		
+		System.out.println("Digite o valor de y: ");
+		y = input.nextInt();
+
+		
+		
+		
+		
+		System.out.println("Seu resultado é: " + y);
+		
+	}
+}
