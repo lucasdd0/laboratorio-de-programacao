@@ -1,0 +1,28 @@
+package exercicios;
+import java.util.Scanner;
+public class exercicio23{
+	public static void main (String [] args) {
+		Scanner input = new Scanner(System.in);
+		
+		int a, b, c, nulos, brancos, validos, totaleleitores;
+		
+		System.out.println("Candidado A: ");
+		a = input.nextInt();
+		System.out.println("Candidado B: ");
+		b = input.nextInt();
+		System.out.println("Candidado C: ");
+		c = input.nextInt();
+		System.out.println("Votos em branco: ");
+		brancos = input.nextInt();		
+		System.out.println("Votos nulos: ");
+		nulos = input.nextInt();	
+		
+		validos = a + b + c;
+		totaleleitores = validos + brancos + nulos;
+		
+		
+		
+		
+		input.close();
+	}
+}

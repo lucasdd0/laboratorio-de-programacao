@@ -1,0 +1,18 @@
+package exercicios;
+import java.util.Scanner;
+public class exercicio23{
+	public static void main (String [] args) {
+		Scanner input = new Scanner(System.in);
+		
+		double a, b, c, votosnulos, votosbrancos, votosvalidos;
+		
+		System.out.println("Candidado A: ");
+		a = input.nextDouble();
+		
+		
+		
+		
+		
+		input.close();
+	}
+}
