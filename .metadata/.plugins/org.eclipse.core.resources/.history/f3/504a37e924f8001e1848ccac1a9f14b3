@@ -1,0 +1,24 @@
+package exercicios;
+import java.util.Scanner;
+public class exercicio12 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		
+		int i;
+		int v [] = new int [3];
+		
+		for (i = 0; i < 3; i++)
+		{
+			System.out.println("Digite o " + (i + 1) "° valor: ");
+		}
+		
+		
+		
+		
+		
+		
+		
+		input.close();
+	}
+
+}

@@ -1,0 +1,24 @@
+package exercicios;
+import java.util.Scanner;
+public class exercicio12 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		
+		int a, b, c;
+		
+		System.out.println("a = ");
+		a = input.nextInt();
+		System.out.println("b = ");
+		b = input.nextInt();
+		System.out.println("c = ");
+		c = input.nextInt();
+		
+		
+		
+		
+		
+		
+		input.close();
+	}
+
+}
