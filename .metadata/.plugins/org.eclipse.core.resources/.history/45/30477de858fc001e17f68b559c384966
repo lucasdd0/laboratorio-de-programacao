@@ -1,0 +1,80 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class exercicio14 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		
+		String cargo;
+		int anos;
+		double aumento, salario, novosalario;
+		
+		System.out.println("Digite seu salário: ");
+		salario = input.nextDouble();
+		
+		System.out.println("Digite seu cargo: ");
+		cargo = input.next();
+		
+		System.out.println("Digite seu tempo de serviço em anos: ");
+		anos = input.nextInt();
+		
+		if(cargo.equalsIgnoreCase("gerente"))
+		{
+			if (anos >= 5)
+			{
+				novosalario = salario * 0.10;
+			}
+			if (anos >= 3 && anos < 5)
+			{
+				novosalario = salario * 0.9;
+			}
+			if (anos < 3)
+			{
+				novosalario = salario * 0.8;
+			}
+		}
+		if(cargo.equalsIgnoreCase("engenheiro"))
+		{
+			if (anos >= 5)
+			{
+				novosalario = salario * 0.11;
+			}
+			if (anos >= 3 && anos < 5)
+			{
+				novosalario = salario * 0.10;
+			}
+			if (anos < 3)
+			{
+				novosalario = salario * 0.9;
+			}
+		}
+		if(cargo.equalsIgnoreCase("técnico"))
+		{
+			if (anos >= 5)
+			{
+				novosalario = salario * 0.12;
+			}
+			if (anos >= 3 && anos < 5)
+			{
+				novosalario = salario * 0.11;
+			}
+			if (anos < 3)
+			{
+				novosalario = salario * 0.10;
+			}
+		}
+		System.out.println("Seu novo salário é: " + novosalario);
+		
+
+		
+		
+		
+		
+		
+		
+		
+		input.close();
+	}
+
+}
