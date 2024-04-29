@@ -1,0 +1,21 @@
+package ckeckpoint2;
+
+import java.util.Scanner;
+
+public class exercicio04 {
+	public static void main(String[] args) {
+		Scanner in = new Scanner (System.in);
+		
+		double x , y;
+		
+		System.out.println("Digite o valor de x: ");
+		x = in.nextDouble();
+		
+		y = 8/Math.sqrt(Math.pow(x, 2) - 25);
+		
+		System.out.println(y);
+		
+		in.close();
+	}
+
+}

@@ -1,7 +1,0 @@
-package exercicios;
-import java.util.Scanner;
-public class exercicio8c{
-	public static void main(String[] args) {
-		
-	}
-}

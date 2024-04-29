@@ -1,0 +1,29 @@
+package ckeckpoint2;
+
+import java.util.Scanner;
+
+public class exercicio03 {
+	public static void main(String[] args) {
+		Scanner in = new Scanner (System.in);
+		
+		double totaldecompras, desconto;
+		
+		System.out.println("Digite o valor total das suas compras: ");
+		totaldecompras = in.nextDouble();
+		
+		if (totaldecompras > 1000) {
+			desconto = totaldecompras * 0.85;
+		}else {
+			desconto = totaldecompras * 0.92;
+		}
+		
+		System.out.println("O valor que deve pagar é de " + String.format("%.2f", desconto) + " e economizou " + (totaldecompras-desconto));
+		
+		
+		
+		
+		
+		in.close();
+	}
+
+}
