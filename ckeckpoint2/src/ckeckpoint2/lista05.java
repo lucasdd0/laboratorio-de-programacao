@@ -10,7 +10,7 @@ public class lista05 {
 		double c = 3.5;
 		boolean d = false, e = true, result1, result2, resultfinal;
 		
-		result1 = b / c == c;
+		result1 = (b / c) == c;
 		result2 = (b / a) != c;
 		
 		resultfinal = result1 || result2;
