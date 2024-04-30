@@ -14,16 +14,10 @@ public class exercicio07 {
 		if (diarias > 15) {
 			valor = diarias * 15.50;
 		}
-		else if (diarias == 15) {
-			valor = diarias * 36;
-		}
-		else {
-			valor = diarias * 58;
-		}
 		
-		valor += diarias * 250;
 		
-		System.out.println("Você deve pagar: " + valor);
+		
+		
 		
 		in.close();
 	}

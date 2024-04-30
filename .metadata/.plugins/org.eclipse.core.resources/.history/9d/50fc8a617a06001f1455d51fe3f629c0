@@ -23,7 +23,11 @@ public class exercicio07 {
 		
 		valor += diarias * 250;
 		
-		System.out.println("Você deve pagar: " + valor);
+		System.out.println("");
+		
+		
+		
+		
 		
 		in.close();
 	}

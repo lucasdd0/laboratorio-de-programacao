@@ -25,6 +25,10 @@ public class exercicio07 {
 		
 		System.out.println("Você deve pagar: " + valor);
 		
+		
+		
+		
+		
 		in.close();
 	}
 
