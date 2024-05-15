@@ -1,0 +1,32 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class exercicio28 {
+	public static void main(String[] args) {
+		Scanner in = new Scanner (System.in);
+		
+		int i, n, valor, total = 0;
+		int pagamento;
+		
+		System.out.println("Digite quantas compras foram feitas: ");
+		n = in.nextInt();
+		
+		for (i = 1; i <= n; i++) {
+			System.out.println("Digite o valor da compra: ");
+			valor = in.nextInt();
+			total += valor;
+		}
+		
+		System.out.println("Forma de pagamento:\nÀ vista (digite 1)\nEm duas vezes (digite 2)");
+		pagamento = in.nextInt();
+		
+		if(pagamento == 1) {
+			total -= total * 0.1;
+		}
+		
+		
+		in.close();
+	}
+
+}

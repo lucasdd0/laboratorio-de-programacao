@@ -1,0 +1,20 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class exercicio28 {
+	public static void main(String[] args) {
+		Scanner in = new Scanner (System.in);
+		
+		int i, n;
+		
+		System.out.println("Digite quantas compras foram feitas: ");
+		i = in.nextInt();
+		
+		
+		
+		
+		in.close();
+	}
+
+}
