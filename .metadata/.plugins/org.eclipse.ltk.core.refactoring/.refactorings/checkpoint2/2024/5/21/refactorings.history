@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;ckeckpoint2&apos; to &apos;checkpoint2&apos;&#x0D;&#x0A;- Original project: &apos;checkpoint2&apos;&#x0D;&#x0A;- Original element: &apos;checkpoint2/src/ckeckpoint2&apos;&#x0D;&#x0A;- Renamed element: &apos;checkpoint2/src/checkpoint2&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings&#x0D;&#x0A;- Rename subpackages of the package" description="Rename package &apos;ckeckpoint2&apos;" flags="589830" hierarchical="true" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;ckeckpoint2" name="checkpoint2" qualified="false" references="true" stamp="1716317965334" textual="false" version="1.0"/>
+</session>

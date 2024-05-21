@@ -1,4 +1,4 @@
-package ckeckpoint2;
+package checkpoint2;
 
 import java.util.Scanner;
 

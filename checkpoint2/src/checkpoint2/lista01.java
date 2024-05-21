@@ -1,18 +1,20 @@
-package ckeckpoint2;
+package checkpoint2;
 
 import java.util.Scanner;
 
-public class lista04 {
+public class lista01 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner (System.in);
 		
-		int a = 2, b = 7;
-		double c = 3.5;
-		boolean d = false, e = true;
+		int a = 6, b = 3, c = 2, v1, v2;
 		
-		boolean result = d || e || (e || d && ! (d || d));
+		v1 = a + b / c;
+		v2 = c / a + 4;
+		
+		boolean result = v1 < v2;
 		
 		System.out.println("O resultado da expressão é: " + result);
+		
 		
 		in.close();
 	}
