@@ -1,0 +1,25 @@
+package checkpoint3;
+
+import java.util.Scanner;
+
+public class exercicio04 {
+	public static void main(String[] args) {
+		Scanner in = new Scanner (System.in);
+		
+		int n, i, result = 1;
+		
+		System.out.println("Digite um número: ");
+		n = in.nextInt();
+		
+		for(i = n-1; i > 0; i--) {
+			result = n * i;
+			System.out.println(result);
+		}
+		
+		
+		
+		
+		in.close();
+	}
+
+}

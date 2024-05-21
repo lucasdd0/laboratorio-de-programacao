@@ -12,7 +12,7 @@ public class exercicio26 {
 		n = in.nextInt();
 		
 		for(i = -n; i <= n; i++) {
-			if (i != 0 && n % i == 0) {
+			if(i != 0 && n % i == 0) {
 				System.out.print(i + " ");
 			}
 		}
