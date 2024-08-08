@@ -2,11 +2,11 @@ package SegundoSemestre;
 
 import java.util.Scanner;
 
-public class exercicio01 {
+public class exercicio02 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner (System.in);
 		
-		int rep, i, maior = Integer.MIN_VALUE, menor = Integer.MAX_VALUE;
+		int rep, i, impar = 0;
 		
 		System.out.println("Digite o tanaho da array: ");
 		rep = in.nextInt();
@@ -17,15 +17,14 @@ public class exercicio01 {
 			System.out.println("Digite o " + i + "° número: ");
 			array[i] = in.nextInt();
 			
-			if(maior < array[i]) {
-				maior = array[i];
-			}
-			if(menor > array[i]) {
-				menor = array[i];
+			if(array[i] % 2 != 0) {
+				impar++;
 			}
 		}
 		
-		System.out.println("O maior valor é " + maior + " e o menor valor é " + menor);
+		System.out.println("O total de ímpares é: " + impar);
+		System.out.println("O total de pares é: " + (array.length - impar));
+		
 	}
 
 }
