@@ -7,11 +7,12 @@ public class exercicio03 {
 		Scanner in = new Scanner (System.in);
 		
 		double media = 0, total = 0;
+		String [] mes = {"janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro" , "dezembro"};
 		
 		double [] temperatura = new double [12];
 		
 		for (int i = 0; i < temperatura.length; i++) {
-			System.out.println("Digite a temperatura do " + (i + 1) + "° mês: ");
+			System.out.println("Digite a temperatura do mês de " + mes[i] +": ");
 			temperatura[i] = in.nextDouble();
 			
 			media += temperatura[i];	
@@ -19,6 +20,12 @@ public class exercicio03 {
 		
 		media /= temperatura.length;
 		System.out.println("Média anual = " + media);
+		
+		for(int i = 0; 1 < temperatura.length; i++) {
+			if(temperatura[i] > media) {
+				System.out.println(temperatura[i] + "-----> " + mes[i]);
+			}
+		}
 	}
 
 }
