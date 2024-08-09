@@ -6,10 +6,8 @@ public class exercicio05 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner (System.in);
 		
-		int rep;
-		
 		System.out.println("Digite o tamanho da array: ");
-		rep = in.nextInt();
+		int rep = in.nextInt();
 		
 		int [] array = new int [rep];
 		
