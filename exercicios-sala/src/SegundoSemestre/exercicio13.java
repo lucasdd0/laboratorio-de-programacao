@@ -24,8 +24,8 @@ public class exercicio13 {
 			System.out.println();
 		}
 		
-		medianual[j] = media/temperatura[i].length;
-		System.out.println();
+//		medianual[j] = media/temperatura[i].length;
+//		System.out.println();
 		
 		for (int i = 0; i < medianual.length; i++) {
 			for (int j = 0; j < medianual.length; j++) {
