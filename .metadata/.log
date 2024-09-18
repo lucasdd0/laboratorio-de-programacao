@@ -5806,3 +5806,12 @@ java.lang.NullPointerException: Cannot invoke "org.eclipse.oomph.p2.core.BundleP
 	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:576)
 	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:268)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.moreunit 1 0 2024-09-17 22:37:59.008
+!MESSAGE RenameClassParticipant.checkConditions
+
+!ENTRY org.moreunit 1 0 2024-09-17 22:38:43.641
+!MESSAGE RenameClassParticipant.checkConditions
+
+!ENTRY org.moreunit 1 0 2024-09-17 22:38:54.513
+!MESSAGE RenameClassParticipant.checkConditions
