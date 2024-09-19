@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+C:\Users\labsfiap\Desktop\laboratorio-de-programacao\.metadata\.plugins\org.eclipse.jdt.core
-3011209426.index
-3021462112.index
-1865797976.index
