@@ -10,8 +10,10 @@ public class exercicio20 {
 		int[] v = new int [10];
 		
 		preencher(v);
+		System.out.println("Antes de inverter");
 		imprimir(v);
 		inverter(v);
+		System.out.println("Depois de inverter");
 		imprimir(v);
 		
 		in.close();
