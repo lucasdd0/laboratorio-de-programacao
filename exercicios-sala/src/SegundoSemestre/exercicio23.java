@@ -12,11 +12,13 @@ public class exercicio23 {
         preenchendo(v);
         imprimindo(v);
         double media = media(v);
-        desvioPadrao(v, media(v));
+        double desvio = desvioPadrao(v, media);
+        System.out.println("Desvio padrão:" + desvio);
 
-        in.close(); // Fechar o Scanner
+        in.close();
     }
 
+    
     public static void preenchendo(int v[]) {
         Random rd = new Random();
         for (int i = 0; i < v.length; i++) {
@@ -24,6 +26,7 @@ public class exercicio23 {
         }
     }
 
+    
     public static void imprimindo(int v[]) {
         System.out.print("Vetor: ");
         for (int i = 0; i < v.length; i++) {
@@ -32,6 +35,7 @@ public class exercicio23 {
         System.out.println();
     }
 
+    
     public static double media(int v[]) {
         double soma = 0;
         for (int i = 0; i < v.length; i++) {
@@ -42,12 +46,12 @@ public class exercicio23 {
         return media;
     }
 
-    public static void desvioPadrao(int[] v, double media) {
+    
+    public static double desvioPadrao(int[] v, double media) {
         double somaQuadrados = 0;
-        for (int i = 0; i < v.length; i++) {
+        for (int i : v) {
             somaQuadrados += Math.pow(v[i] - media, 2);
         }
-        double desvioPadrao = Math.sqrt(somaQuadrados / (v.length - 1));
-        System.out.println("Desvio Padrão: " + desvioPadrao);
+        return Math.sqrt(somaQuadrados / (v.length - 1));
     }
 }
