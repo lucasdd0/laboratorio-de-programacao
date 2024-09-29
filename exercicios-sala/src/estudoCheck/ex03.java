@@ -1,39 +1,66 @@
 package estudoCheck;
 
-import java.util.Scanner;
+import java.util.Random;
 
 public class ex03 {
 	public static void main(String[] args) {
-		Scanner in = new Scanner (System.in);
 		
-		String [] aluno = new String [10];
-		double [] nota = new double [4];
+		int anos = 10;
+		int meses = 12;
 		
+		int [][] m = new int [anos][meses];
+		Random rd = new Random();
 		
-		int alunosAprovados = 0;
+		String[] nomeMeses = {"Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"};
 		
-		for (int i = 0; i < aluno.length; i++) {
-			System.out.println("Nome do " + (i+1) + "º aluno: ");
-			aluno[i] = in.next();
-			
-			double somaNotas = 0, media = 0;
-			
-			for (int j = 0; j < nota.length; j++) {
-				System.out.println("Digite a " + (j+1) + "º nota do(a) " + aluno[i] + ": ");
-				nota[j] = in.nextDouble();
-				somaNotas += nota[j];
+		System.out.println("Temperaturas: ");
+		for (int i = 0; i < anos; i++) {
+			for (int j = 0; j < meses; j++) {
+				m[i][j] = rd.nextInt(0, 35);
 			}
-		
-			media = somaNotas / nota.length;
-			
-			if(media >= 6.0) {
-				alunosAprovados++;
-			}
-			
 		}
 		
-		System.out.println("O número de alunos aprovados é: " + alunosAprovados);
+		double mediasAnuais [] = new double [anos];
+		for (int i = 0; i < anos; i++) {
+			double soma = 0;
+			for (int j = 0; j < meses; j++) {
+				soma += m[i][j];
+			}
+			mediasAnuais[i] = soma / meses;
+		}
 		
+        System.out.print("\t\t"); 
+        for (int mes = 0; mes < meses; mes++) {
+            System.out.print(nomeMeses[mes] + "\t");
+        }
+        System.out.println();
+
+
+        for (int i = 0; i < anos; i++) {
+            System.out.print("Ano " + (i + 2020) + "\t");
+            for (int j = 0; j < meses; j++) {
+                System.out.print(m[i][j] + "\t");
+            }
+            System.out.println(" = " + String.format("%.2f", mediasAnuais[i]));
+        }
+		
+		double maior = Integer.MIN_VALUE;	
+		double menor = Integer.MAX_VALUE;	
+		int anoMaior = 0;
+		int anoMenor = 0;
+		for (int i = 0; i < mediasAnuais.length; i++) {
+			if(maior < mediasAnuais[i]) {
+				maior = mediasAnuais[i];
+				anoMaior = i;
+			}
+			if(menor > mediasAnuais[i]) {
+				menor = mediasAnuais[i];
+				anoMenor = i;
+			}
+		}
+		
+		System.out.println("\nA maior media foi no ano " + (anoMaior + 1) + ", sendo ela: " + String.format("%.2f", maior));
+		System.out.println("A menor media foi no ano " + (anoMenor + 1) + ", sendo ela: " + String.format("%.2f", menor));
 	}
 
 }

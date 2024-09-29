@@ -1,29 +1,43 @@
 package estudoCheck;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class ex01 {
-	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		
-		int [] vetor = new int[10];
-		
-		int maior = Integer.MIN_VALUE;
-		int menor = Integer.MAX_VALUE;
-		
-		for(int i = 0; i < vetor.length; i++) {
-			System.out.println("Digite o " + (i + 1) + "º valor: ");
-			vetor[i] = in.nextInt();
-			if(vetor[i] > maior) {
-				maior = vetor[i];
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        int[][] m = new int[4][4];
+        Random rd = new Random();
+
+        for (int i = 0; i < m.length; i++) {
+            for (int j = 0; j < m.length; j++) {
+                m[i][j] = rd.nextInt(20);
+            }
+        }
+
+        System.out.println("Matriz geral: ");
+        for (int i = 0; i < m.length; i++) {
+			for (int j = 0; j < m.length; j++) {
+				System.out.print(m[i][j] + "\t");
 			}
-			if(vetor[i] < menor) {
-				menor = vetor[i];
-			}
-			
+			System.out.println();
 		}
-		System.out.println("O maior valor é: " + maior);
-		System.out.println("O menor valor é: " + menor);
-	}
-	
+        
+        int somaPrincipal = 0;
+        for (int i = 0; i < m.length; i++) {
+			somaPrincipal += m[i][i];
+		}
+        System.out.println("\nSoma da linha primária:" + somaPrincipal);
+        
+        int somaSecundaria = 0;
+        for (int i = 0; i < m.length; i++) {
+			somaSecundaria += m[i][m.length - i - 1];
+		}
+        System.out.println("Soma da linha secundária: " + somaSecundaria);
+        
+        
+
+        in.close();
+    }
 }
