@@ -14,6 +14,7 @@ public class exercicio31 {
 		String[] temp;
 		double x, y, z;
 		int equilatero = 0, escaleno = 0, isosceles = 0;
+		int naoTriangulo = 0;
 		
 		try {
 			file= new FileReader("triangulos.txt");
@@ -24,7 +25,23 @@ public class exercicio31 {
 				x = Double.parseDouble(temp[0]);
 				y = Double.parseDouble(temp[1]);
 				z = Double.parseDouble(temp[2]);
+				
+				if(x < y + z && y < x + z && z < y + x) {
+					if(x == y && y == z) {
+						equilatero++;
+					}
+					else if(x == y || x == z ||  y == z) {
+						isosceles ++;
+					}
+					else {
+						escaleno++;
+					}
+				}
+				else {
+					naoTriangulo++;
+				}
 			}
+			
 		}
 		catch (FileNotFoundException e) {
 			System.out.println("Erro ao abrir o arquivo");
@@ -32,6 +49,11 @@ public class exercicio31 {
 		catch (IOException e) {
 			System.out.println("Erro ao ler dados do arquivo");
 		}
+		
+		System.out.println("Total de equilateros: " + equilatero);
+		System.out.println("Total de isósceles: " + isosceles);
+		System.out.println("Total de escalenos: " + escaleno);
+		System.out.println("Total de não triângulos: " + naoTriangulo);
 		
 		
 		
