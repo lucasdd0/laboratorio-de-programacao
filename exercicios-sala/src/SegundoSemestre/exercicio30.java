@@ -8,36 +8,38 @@ import java.io.IOException;
 public class exercicio30 {
 	public static void main(String[] args) {
 		
-		FileReader file;
-		
-		BufferedReader buffer;
-		
 		String linha;
-		
+		FileReader file;
+		BufferedReader buffer;
 		String[] aux;
-		
 		double media;
 		
 		try {
-			file = new FileReader("alunos");
+			file = new FileReader("alunos.txt");
 			buffer = new BufferedReader(file);
 			while((linha = buffer.readLine()) != null) {
 				aux = linha.split(";");
 				media = 0;
-				for (int i = 1; i < aux.length; i++) {
+				for(int i = 1; i < aux.length; i++) {
 					media += Double.parseDouble(aux[i]);
 				}
 				media = media / (aux.length - 1);
-				System.out.println(media);
+				System.out.println(aux[0]);
+				System.out.println("Média = " + media );
+				if(media >= 6) {
+					System.out.println("APROVADO");
+				}
+				else {
+					System.out.println("REPROVADO");
+				}
+				System.out.println();	
 			}
-		}
+		}		
 		catch (FileNotFoundException e) {
-			System.out.println("Erro ao abrir o arquivo!");
-		}
+			System.out.println("Erro ao abrir o arquivo");
+		} 
 		catch (IOException e) {
-			System.out.println("Erro ao ler os dados do aquivo");
+			System.out.println("Erro ao ler dados do arquivo");
 		}
-		
 	}
-
 }
