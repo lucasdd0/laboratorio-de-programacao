@@ -1,14 +1,18 @@
 package SegundoSemestre;
 
 import static javax.swing.JOptionPane.*;
+
+import java.util.Scanner;
+
 import static java.lang.Integer.*;
 
 public class exercicio33 {
 	//variáveis globais --> para serem acessadas em todos os métodos
 	static String[] cpf = new String[5];		
-	static String[] nome = new String[5];		
-	static double[] saldo = new double[5];
-	
+	static String[] nome = new String[cpf.length];		
+	static double[] saldo = new double[cpf.length];
+	static int posicao = 0;
+	s 
 	public static void menu() {
 		int opcao;
 		
@@ -27,16 +31,16 @@ public class exercicio33 {
 						abrirConta();
 						break;
 					case 2:
-						abrirConta();
+						sacar();
 						break;
 					case 3:
-						abrirConta();
+						depositar();
 						break;
 					case 4:
-						abrirConta();
+						consultarSaldo();
 						break;
 					case 5:
-						abrirConta();
+						fecharConta();
 						break;
 					}
 				}
@@ -58,4 +62,33 @@ public class exercicio33 {
 				.append("6. Finalizar\n");
 		return builder.toString();
 	}
+	
+	private static int pesquisar() {
+		int index = -1;
+		String aux = showInputDialog("CPF para pesquisar");
+		for(int i = 0; i < posicao; i++) {
+			if(cpf[i].equals(aux)) {
+				index= i;
+			}
+		}
+		if(index == -1) {
+			showConfirmDialog(null, "CPF não encotrado");
+		}
+		return index;
+	}
+	
+	private static void abrirConta() {
+		if(posicao < cpf.length) {
+			cpf[posicao] = showInputDialog("CPF");
+			nome[posicao] = showInputDialog("Nome");
+		}
+		else {
+			showConfirmDialog(null, "Procure a agência");
+		}
+	}
+	
+	private static void consultarSaldo() {
+		
+	}
+	
 }
