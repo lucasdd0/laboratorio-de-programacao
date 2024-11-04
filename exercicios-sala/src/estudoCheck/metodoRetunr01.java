@@ -7,7 +7,7 @@ public class metodoRetunr01 {
 		System.out.println("O resultado da soma é: " + soma);
 	}
 	
-	public static int somar (int x, int y) {
+	public static int somar (int x, int y) {			//os que retornam um valor é chamado de função
 		int soma;
 		soma = x + y;
 		return soma;
