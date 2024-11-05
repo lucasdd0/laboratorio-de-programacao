@@ -29,10 +29,15 @@ public class ex05 {
 	}
 	
 	public static String inverter(String palavra) {
-		char[] letra = new char[palavra.length()];
-		for(int i = palavra.length() - 1; i >= 0; i--) {
-			letra[palavra.length() - 1 - i] = palavra.charAt(i);
+		
+		char[] letra = palavra.toCharArray();
+		
+		for(int i = 0; i < letra.length /2; i++) {
+			char aux = letra[i];
+			letra[i] = letra[letra.length - i - 1];
+			letra[letra.length - i - 1] = aux;
 		}
+		
 		String aux = new String(letra);
 		System.out.println(aux);
 		return aux;
