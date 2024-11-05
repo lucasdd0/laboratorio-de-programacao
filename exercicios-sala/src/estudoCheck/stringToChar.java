@@ -25,7 +25,7 @@ public class stringToChar {
 		System.out.println(palavra2Nova);
 		
 		
-		System.out.println("");
+		System.out.println();
 		
 		
 		String frase = "Java é divertido e poderoso";
@@ -33,6 +33,28 @@ public class stringToChar {
 		
 		for(String i : cortes) {
 			System.out.print(i + "\t");
+		}
+		
+		
+		System.out.println("\n");
+		
+		
+		String frase2 = "banana,maçã,laranja,uva";
+		String[] cortes2 = frase2.split(",");
+		
+		for(String i2 : cortes2) {
+			System.out.print(i2 + "\t");
+		}
+		
+		
+		System.out.println("\n");
+		
+		
+		String frase3 = "Java é divertido e poderoso";
+		String[] cortes3 = frase3.split(" ", 3);
+		
+		for(String i3 : cortes3) {
+			System.out.print(i3 + "\t");
 		}
 		
 		
